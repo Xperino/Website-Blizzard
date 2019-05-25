@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang='uk'>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
     <title>Бліцарт Продукціон</title>
     <link rel='stylesheet' href='css/index.css'>
 </head>
@@ -19,8 +19,8 @@
         <img src='img/photo-header-skier.jpg' alt='лижник бліцарт' width='575' height='324'>
     </header>
     
-    <article>
-        <section id='section-1' class='section-1'>
+    <div>
+        <section class='section-about-us'>
             <h2>Про нас</h2>
             <p>Лижна фабрика з іноземними інвестиціями ТОВ «Бліцарт Продукціон» була заснована у лютому
             2006 року австрійською фірмою «Blizzard Sport GmbH», яка входить в транснаціональну корпорацію Tecnica Group.</p>
@@ -32,7 +32,7 @@
             яка на даний момент нараховує більше 250 працюючих.</p>
         </section>
         
-        <section id='section-2' class='section-2'>
+        <section class='section-work'>
             <h2>Робота</h2>
             <p><strong><i>Ми пропонуємо одні з найкращих умов праці в Закарпатті</i></strong></p>
             <figure>
@@ -44,19 +44,19 @@
                 <figcaption>Безкоштовний транспорт</figcaption>
             </figure>    
             <figure>    
-                <img src ='img/icon-canteen96px.png' alt='столова'>
+                <img src='img/icon-canteen96px.png' alt='столова'>
                 <figcaption>Комплексне пільгове харчування</figcaption>
             </figure>
             <figure>    
-                <img src ='img/icon-cv96px.png' alt='резюме без досвіду'>
+                <img src='img/icon-cv96px.png' alt='резюме без досвіду'>
                 <figcaption>Приймаємо працівників без досвіду</figcaption>
             </figure>
             <figure>    
-                <img src ='img/icon-calendar96px.png' alt='календар'>
+                <img src='img/icon-calendar96px.png' alt='календар'>
                 <figcaption>8-годинний графік роботи</figcaption>
             </figure>
             <figure>    
-                <img src ='img/icon-vacation96px.png' alt='відпустка'>
+                <img src='img/icon-vacation96px.png' alt='відпустка'>
                 <figcaption>Оплачувана відпустка 2 рази на рік</figcaption>
             </figure>
             <figure>
@@ -65,16 +65,16 @@
             </figure>
         </section>
         
-        <section id='section-3' class='section-3'>
+        <section class='section-gallery'>
             <h2>Галерея</h2>
             <img src='img/photo-orange-skis2.jpg' alt='лижа' width='250' height='167'>
             <img src='img/photo-canteen.jpg' alt='працівник' width='250' height='167'>
             <img src='img/photo-sw.jpg' alt='столова' width='250' height='167'>
             <img src='img/photo-orange-skis.jpg' alt='оранжеві лижі' width='250' height='167'>
-            <button onclick='myFunction()' id='show-more'>Показати ще</button>
+            <button onclick='show-more()' id='show-more'>Показати ще</button>
         </section>
         
-        <section id='section-4' class='section-4'>
+        <section class='section-contact-us'>
             <h2>Зв'яжіться з нами</h2>
             <form method='POST' action='https://formspree.io/kostur.vlad@gmail.com'>
                 <input id='your-name' type='text' name='your-name' placeholder='Ваше ім`я та прізвище' required>
@@ -91,9 +91,9 @@
                 <button type='submit'>Відправити</button>
             </form>
         </section>
-    </article>
+    </div>
     
-    <footer id='footer' class='footer'>
+    <footer>
         <h2>Контакти</h2>
         <p><b>ТОВ "Бліцарт Продукціон"</b><br>
         Закарпатська область, м. Чоп,<br>
