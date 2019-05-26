@@ -8,19 +8,24 @@
     <link rel='stylesheet' href='css/index.css'>
 </head>
 <body>
-    <nav>
-        <img src='img/icon-burgermenu50px.png' alt='меню'>
-    </nav>
-    
     <header>
-        <a id='call' href='tel:+380991851956'><img src='img/icon-call48px.png' alt='передзвонити'>+38 (099) 185 19 56</a>
         <img src='img/logo-blizzard-red.jpg' alt='логотип Бліцарт' width='244' height='33'>
+        <nav class='menu'>
+            <ul>
+                <li><a href='#'>Про нас</a></li>
+                <li><a href='#section-work'>Робота</a></li>
+                <li><a href='#section-gallery'>Галерея</a></li>
+                <li><a href='#section-contact-us'>Контакти</a></li>
+            </ul>
+        </nav>
+        <a id='call' href='tel:+380991851956'><img src='img/icon-call48px.png' alt='передзвонити'>+38 (099) 185 19 56</a>
+        
         <h1>Вас вітає лижна фабрика ТОВ "Бліцарт Продукціон"</h1>
         <img src='img/photo-header-skier.jpg' alt='лижник бліцарт' width='575' height='324'>
     </header>
     
     <div>
-        <section class='section-about-us'>
+        <section id='section-about-us' class='section-about-us'>
             <h2>Про нас</h2>
             <p>Лижна фабрика з іноземними інвестиціями ТОВ «Бліцарт Продукціон» була заснована у лютому
             2006 року австрійською фірмою «Blizzard Sport GmbH», яка входить в транснаціональну корпорацію Tecnica Group.</p>
@@ -32,7 +37,7 @@
             яка на даний момент нараховує більше 250 працюючих.</p>
         </section>
         
-        <section class='section-work'>
+        <section id='section-work' class='section-work'>
             <h2>Робота</h2>
             <p><strong><i>Ми пропонуємо одні з найкращих умов праці в Закарпатті</i></strong></p>
             <figure>
@@ -65,7 +70,7 @@
             </figure>
         </section>
         
-        <section class='section-gallery'>
+        <section id='section-gallery' class='section-gallery'>
             <h2>Галерея</h2>
             <img src='img/photo-orange-skis2.jpg' alt='лижа' width='250' height='167'>
             <img src='img/photo-canteen.jpg' alt='працівник' width='250' height='167'>
@@ -74,7 +79,7 @@
             <button onclick='show-more()' id='show-more'>Показати ще</button>
         </section>
         
-        <section class='section-contact-us'>
+        <section id='section-contact-us' class='section-contact-us'>
             <h2>Зв'яжіться з нами</h2>
             <form method='POST' action='https://formspree.io/kostur.vlad@gmail.com'>
                 <input id='your-name' type='text' name='your-name' placeholder='Ваше ім`я та прізвище' required>
