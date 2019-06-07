@@ -4,12 +4,16 @@
     --highlight-color: #007aff;
     --background-color: white;
     font-family: helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     max-width: 575px;
+}
+
+header #call {
+    float: right;
 }
 
 header .menu ul {
@@ -26,16 +30,17 @@ header .menu ul li a {
     padding: 5px;
     border: 1px solid var(--background-color);
 }
-
-#call {
-    top: 0px;
-    margin-left: 30%;
+header .menu ul li a:hover {
+    border: 1px solid var(--highlight-color);
 }
+    
 h1 {
     font-size: 14px;
     color: #007aff;
-    padding-left: 8px;
+    display: flex;
+    justify-content: center;
 }
+
 h2 {
     font-size: 26px;
     color: #007aff;
@@ -43,7 +48,32 @@ h2 {
     padding-left: 10px;
 }
 #section-1 p {
-    font-family: serif;
     font-size: 14px;
     padding-left: 10px;
+}
+
+body .section-work p {
+    display: flex;
+    justify-content: center;
+}
+
+body .section-work .advantages {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+
+body .section-gallery .gallery-photos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    
+}
+
+footer .address {
+    float: left;
+}
+
+footer .phones-and-emails {
+    float: right;
 }

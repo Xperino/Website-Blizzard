@@ -11,6 +11,8 @@
 <body>
     <header>
         <img src='img/logo-blizzard-red.jpg' alt='логотип Бліцарт' width='244' height='33'>
+        <a id='call' href='tel:+380991851956'><img src='img/icon-call48px.png' alt='передзвонити'></a>
+        <h1>Вас вітає лижна фабрика ТОВ "Бліцарт Продукціон"</h1>
         <nav class='menu'>
             <ul>
                 <li><a href='#'>Про нас</a></li>
@@ -19,9 +21,6 @@
                 <li><a href='#section-contact-us'>Контакти</a></li>
             </ul>
         </nav>
-        <a id='call' href='tel:+380991851956'><img src='img/icon-call48px.png' alt='передзвонити'>+38 (099) 185 19 56</a>
-        
-        <h1>Вас вітає лижна фабрика ТОВ "Бліцарт Продукціон"</h1>
         <img src='img/photo-header-skier.jpg' alt='лижник бліцарт' width='575' height='324'>
     </header>
     
@@ -41,42 +40,46 @@
         <section id='section-work' class='section-work'>
             <h2>Робота</h2>
             <p><strong><i>Ми пропонуємо одні з найкращих умов праці в Закарпатті</i></strong></p>
-            <figure>
-                <img src='img/icon-money96px.png' alt='гроші'>
-                <figcaption>Заробітна плата від 10 000 ₴ на руки</figcaption>
-            </figure>
-            <figure>
-                <img src='img/icon-bus96px-icon.png' alt='автобус'>
-                <figcaption>Безкоштовний транспорт</figcaption>
-            </figure>    
-            <figure>    
-                <img src='img/icon-canteen96px.png' alt='столова'>
-                <figcaption>Комплексне пільгове харчування</figcaption>
-            </figure>
-            <figure>    
-                <img src='img/icon-cv96px.png' alt='резюме без досвіду'>
-                <figcaption>Приймаємо працівників без досвіду</figcaption>
-            </figure>
-            <figure>    
-                <img src='img/icon-calendar96px.png' alt='календар'>
-                <figcaption>8-годинний графік роботи</figcaption>
-            </figure>
-            <figure>    
-                <img src='img/icon-vacation96px.png' alt='відпустка'>
-                <figcaption>Оплачувана відпустка 2 рази на рік</figcaption>
-            </figure>
-            <figure>
-                <figcaption><strong>Стежте за актуальними вакансіями на</strong></figcaption>
-                <a href='https://www.work.ua/jobs/by-company/968086/' target='_blank'><img src='img/icon-workua.png' alt='ворк.юа'></a>
-            </figure>
+            <div class='advantages'>
+                <figure>
+                    <img src='img/icon-money96px.png' alt='гроші'>
+                    <figcaption>Заробітна плата від 10 000 ₴ на руки</figcaption>
+                </figure>
+                <figure>
+                    <img src='img/icon-bus96px-icon.png' alt='автобус'>
+                    <figcaption>Безкоштовний транспорт</figcaption>
+                </figure>    
+                <figure>    
+                    <img src='img/icon-canteen96px.png' alt='столова'>
+                    <figcaption>Комплексне пільгове харчування</figcaption>
+                </figure>
+                <figure>    
+                    <img src='img/icon-cv96px.png' alt='резюме без досвіду'>
+                    <figcaption>Приймаємо працівників без досвіду</figcaption>
+                </figure>
+                <figure>    
+                    <img src='img/icon-calendar96px.png' alt='календар'>
+                    <figcaption>8-годинний графік роботи</figcaption>
+                </figure>
+                <figure>    
+                    <img src='img/icon-vacation96px.png' alt='відпустка'>
+                    <figcaption>Оплачувана відпустка 2 рази на рік</figcaption>
+                </figure>
+                <figure>
+                    <figcaption><strong>Стежте за актуальними вакансіями на</strong></figcaption>
+                    <a href='https://www.work.ua/jobs/by-company/968086/' target='_blank'><img src='img/icon-workua.png' alt='ворк.юа'></a>
+                </figure>
+            </div>
         </section>
         
         <section id='section-gallery' class='section-gallery'>
             <h2>Галерея</h2>
-            <img src='img/photo-orange-skis2.jpg' alt='лижа' width='250' height='167'>
-            <img src='img/photo-canteen.jpg' alt='працівник' width='250' height='167'>
-            <img src='img/photo-sw.jpg' alt='столова' width='250' height='167'>
-            <img src='img/photo-orange-skis.jpg' alt='оранжеві лижі' width='250' height='167'>
+            <div class='gallery-photos'>
+                <img src='img/photo-orange-skis2.jpg' alt='лижа' width='250' height='167'>
+                <img src='img/photo-canteen.jpg' alt='працівник' width='250' height='167'>
+                <img src='img/photo-sw.jpg' alt='столова' width='250' height='167'>
+                <img src='img/photo-orange-skis.jpg' alt='оранжеві лижі' width='250' height='167'>
+            </div>
             <button onclick='show-more()' id='show-more'>Показати ще</button>
         </section>
         
@@ -102,16 +105,22 @@
     <footer>
         <h2>Контакти</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2647.0548434309926!2d22.202371415649637!3d48.4362871792483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4738e317d5904583%3A0x9ef65461127c263f!2z0JHQu9GW0YbQsNGA0YIg0J_RgNC-0LTRg9C60YbRltC-0L0!5e0!3m2!1suk!2sua!4v1559850321783!5m2!1suk!2sua" width="575" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>        
-        <p><b>ТОВ "Бліцарт Продукціон"</b><br>
-        Закарпатська область, м. Чоп,<br>
-        89502, вул. Загородня 4а</p>
-        <p>Тел.: <a href='tel:+380991851956'>+38 (099) 185 19 56</a> Відділ кадрів<br>
-        <a href='mailto:kadry@blizzard.biz.ua?subject=Робота'>Email: kadry@blizzard.biz.ua</a><br>
-        Тел.: (0312) 71-18-17 Адміністрація<br>
-        Email: office@blizzard.biz.ua</p>
-        <a href='https://www.blizzardsports.com' target='_blank'><img src='img/logo-blizzard-black.jpg' alt='австрійський сайт бліцарт' width='198' height='25'></a><br>
-        <a href='https://www.instagram.com/blizzardskis/' target='_blank'><img src='img/icon-insta64px.png' alt='інстаграм бліцарт'></a>
-        <a href='https://www.facebook.com/blizzardski' target='_blank'><img src='img/icon-fb64px.png' alt='фейсбук бліцарт'></a>
+        <div class='address'>
+            <p><b>ТОВ "Бліцарт Продукціон"</b><br>
+            Закарпатська область, м. Чоп,<br>
+            89502, вул. Загородня 4а</p>
+        </div>
+        <div class='phones-and-emails'>
+            <p>Тел.: <a href='tel:+380991851956'>+38 (099) 185 19 56</a> Відділ кадрів<br>
+            <a href='mailto:kadry@blizzard.biz.ua?subject=Робота'>Email: kadry@blizzard.biz.ua</a><br>
+            Тел.: (0312) 71-18-17 Адміністрація<br>
+            Email: office@blizzard.biz.ua</p>
+        </div>
+        <div class='links'>
+            <a href='https://www.blizzardsports.com' target='_blank'><img src='img/logo-blizzard-black.jpg' alt='австрійський сайт бліцарт' width='198' height='25'></a><br>
+            <a href='https://www.instagram.com/blizzardskis/' target='_blank'><img src='img/icon-insta64px.png' alt='інстаграм бліцарт'></a>
+            <a href='https://www.facebook.com/blizzardski' target='_blank'><img src='img/icon-fb64px.png' alt='фейсбук бліцарт'></a>
+        </div>
     </footer>
 </body>
 </html>
