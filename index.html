@@ -35,9 +35,7 @@
             Кожного року впроваджуються у виробництво нові технологічні розробки та моделі гірських лиж для всіх категорій: 
             від починаючих лижників до юних спортсменів та дорослих експертів. Особлива увага приділяється команді, 
             яка на даний момент нараховує більше 250 працюючих.</span></p>
-            
             <button onclick='readMore()' id='button-read-more'>Читати далі</button>
-            
         </section>
         
         <section id='section-work' class='section-work'>
@@ -50,7 +48,7 @@
                 </figure>
                 <figure>
                     <img src='img/icon-bus96px-icon.png' alt='автобус'>
-                    <figcaption>Безкоштовний транспорт</figcaption>
+                    <figcaption>Безкоштовне транспортування</figcaption>
                 </figure>    
                 <figure>    
                     <img src='img/icon-canteen96px.png' alt='столова'>
@@ -68,22 +66,43 @@
                     <img src='img/icon-vacation96px.png' alt='відпустка'>
                     <figcaption>Оплачувана відпустка 2 рази на рік</figcaption>
                 </figure>
-                <figure>
+            </div>
+            <figure id='vacancies'>
                     <figcaption><strong>Стежте за актуальними вакансіями на</strong></figcaption>
                     <a href='https://www.work.ua/jobs/by-company/968086/' target='_blank'><img src='img/icon-workua.png' alt='ворк.юа'></a>
-                </figure>
-            </div>
+            </figure>
         </section>
         
         <section id='section-gallery' class='section-gallery'>
             <h2>Галерея</h2>
-            <div class='gallery-photos'>
-                <img src='img/photo-orange-skis2.jpg' alt='лижа' width='250' height='167'>
-                <img src='img/photo-canteen.jpg' alt='працівник' width='250' height='167'>
-                <img src='img/photo-sw.jpg' alt='столова' width='250' height='167'>
-                <img src='img/photo-orange-skis.jpg' alt='оранжеві лижі' width='250' height='167'>
+            <div class='gallery-container'>
+                <div class='gallery-slideshow'>
+                    <img src='img/photo-orange-skis2.jpg' alt='лижа'>
+                </div>
+                <div class='gallery-slideshow'>
+                    <img src='img/photo-canteen.jpg' alt='столова'>
+                </div>
+                <div class='gallery-slideshow'>
+                    <img src='img/photo-sw.jpg' alt='працівник'>
+                </div>
+                <div class='gallery-slideshow'>
+                    <img src='img/photo-orange-skis.jpg' alt='оранжеві лижі'>
+                </div>
+                <div class='gallery-slideshow'>
+                    <img src='img/photo-worker-repairs-machine.jpg' alt='працівник ремонтує верстат'>
+                </div>
+                <div class='gallery-slideshow'>
+                    <img src='img/photo-worker-repairs-ski.jpg' alt='працівник ремонтує лижу'>
+                </div>
+                <div class='gallery-slideshow'>
+                    <img src='img/photo-worker-at-machine.jpg' alt='працівниця за верстатом'>
+                </div>
+                <div class='gallery-slideshow'>
+                    <img src='img/photo-worker-ski-packaging.jpg' alt='працівниця пакує лижі в коробку'>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
-            <button onclick='show-more()' id='show-more'>Показати ще</button>
         </section>
         
         <section id='section-contact-us' class='section-contact-us'>
@@ -122,8 +141,8 @@
             Email: office@blizzard.biz.ua</p>
         </div>
         <div class='links'>
-            <a href='https://www.blizzardsports.com' target='_blank'><img src='img/logo-blizzard-black.jpg' alt='австрійський сайт бліцарт' width='198' height='25'></a><br>
             <a href='https://www.instagram.com/blizzardskis/' target='_blank'><img src='img/icon-insta64px.png' alt='інстаграм бліцарт'></a>
+            <a href='https://www.blizzardsports.com' target='_blank'><img src='img/logo-blizzard-black.jpg' alt='австрійський сайт бліцарт' width='198' height='25'></a><br>
             <a href='https://www.facebook.com/blizzardski' target='_blank'><img src='img/icon-fb64px.png' alt='фейсбук бліцарт'></a>
         </div>
     </footer>
