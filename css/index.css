@@ -176,7 +176,8 @@ footer .phones-and-emails {
 }
 
 footer .links {
-    display: inline-block;
+    position: relative;
+    display: inline-flex;
 }
 
 #button-scroll-to-top {
