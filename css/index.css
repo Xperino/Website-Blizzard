@@ -199,3 +199,15 @@ footer .links {
 #button-scroll-to-top:hover {
     background-color: #555;
 }
+
+body button {
+    border: none;
+    background-color: #007aff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+body button:hover {
+    background-color: #555;
+}
