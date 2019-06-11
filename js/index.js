@@ -1,3 +1,4 @@
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -11,7 +12,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName('gallery-slideshow');
+  const slides = document.getElementsByClassName('gallery-slideshow');
   if (n > slides.length) {slideIndex = 1};
   if (n < 1) {slideIndex = slides.length};
   for (i = 0; i < slides.length; i++) {
@@ -21,9 +22,9 @@ function showSlides(n) {
 }
 
 function readMore() {
-    var dots = document.getElementById('dots');
-    var moreText = document.getElementById('more');
-    var buttonText = document.getElementById('button-read-more');
+    const dots = document.getElementById('dots');
+    const moreText = document.getElementById('more');
+    const buttonText = document.getElementById('button-read-more');
     
     if (dots.style.display === 'none') {
         dots.style.display = 'inline';
@@ -36,10 +37,12 @@ function readMore() {
     }
 }    
 
-window.onscroll = function() {scrollDown()};
+window.addEventListener('scroll', function() {
+    scrollDown();
+});
 
 function scrollDown() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
         document.getElementById('button-scroll-to-top').style.display = 'block';
     } else {
         document.getElementById('button-scroll-to-top').style.display = 'none';
